@@ -2,5 +2,7 @@
 <a href="/posts/<%=@post.id%>/edit" class="btn btn-primary">Edit Post</a> | 
 <%= link_to 'Delete Post',  { action: :destroy, id: @post.id }, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure?' } %>
 <div class="blog__content">
-	<%= @post.content %>
+	<%= simple_format(@post.content) %>
+	<br/>
+	<p>Post last updated at: <%= @post.updated_at %></p>
 </div>

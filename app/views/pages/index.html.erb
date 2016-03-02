@@ -8,15 +8,18 @@
   <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-  <div class="container">
-    <div class="title__bar">
-      <h1>Michael J Cooper</h1>  
-    </div>
-    <br>
-    <div class="main">
-      <pre class="code-container"><code class="javascript">function greeting() {
+  <div class="container title-wrapper">
+    <div class="jumbotron title-content">
+      <div class="title__bar">
+        <h1 class="display-3">Michael J Cooper</h1>  
+      </div>
+      <br>
+      <div class="main">
+        <pre class="codeContainer"><code class="javascript">function greeting() {
   return "Hello World!";
 }</code></pre>
+      <%= link_to('View Blog', posts_path, class: "btn btn-primary title__button") %>
+      </div>
     </div>
   </div>
 </body>
