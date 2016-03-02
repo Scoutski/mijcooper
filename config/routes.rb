@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/posts/:id/edit' => 'posts#edit'
   patch '/posts/:id' => 'posts#update'
   delete '/posts/:id' => 'posts#destroy'
+
+  get '/calendar' => 'pages#calendar'
 end

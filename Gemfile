@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #My custom gems added here:
 gem 'remove_turbolinks'
+gem "simple_calendar", "~> 2.0"
 
 group :development do
   gem 'pry-rails'
