@@ -1,0 +1,11 @@
+<h1>Blog Posts:</h1>
+<a href="/posts/new" class="btn btn-primary">New Post</a>
+<div class="blog__content">
+	<ul class="list-group">
+		<% @posts.each do |post| %>
+			<li class="list-group-item">
+				<%= link_to((post.title + " - Created at: " + post.created_at.to_s), post) %>
+			</li>
+		<% end %>
+	</ul>
+</div>
